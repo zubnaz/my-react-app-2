@@ -29,9 +29,9 @@ const ListPage:React.FC=()=>{
         {
             title:"Фото",
             dataIndex: "image",
-            render:(imageName:string)=>{                                                        //
-                return(<img src={`${imagePath}${imageName}`} alt="Фото" width={100}/> );            // не зрозумв, що за функція і де береться imageName
-            }                                                                               //
+            render:(imageName:string)=>{
+                return(<img src={`${imagePath}${imageName}`} alt="Фото" width={100}/> );
+            }
         },
         {
             render:(item:ICategoryItem )=>(<><Link to={`edit/${item.id}`}><Button type="primary" style={{margin:"13px"}}>Edit</Button></Link>

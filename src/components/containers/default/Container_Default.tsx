@@ -46,17 +46,23 @@ const Container_Default : React.FC = () => {
                                 icon: <UserOutlined />,
                                 label:  <Link to={"/register"}>Реєстрація</Link>,
                             },
+                            {
+                                key: '4',
+                                icon: <UserOutlined />,
+                                label: <Link to={"/products"}>Продукти</Link>,
+                            },
                             isAuth == false
                                 ? {
-                                    key: '4',
+                                    key: '5',
                                     icon: <UserOutlined />,
                                     label: <Link to={"/login"}>Увійти</Link>,
                                 }
                                 : {
-                                    key: '5',
+                                    key: '6',
                                     icon: <UserOutlined />,
                                     label: <Link to={"/leave"}>Вийти</Link>,
                                 }
+
 
                         ]}
                     />
