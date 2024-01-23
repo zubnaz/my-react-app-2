@@ -54,11 +54,11 @@ const ShowPage:React.FC=()=>{
         <Card title="Продукт"  style={{ width: 300,margin:'auto' }}>
             {prod && (
                 <>
-                    <p>{prod.id}</p>
-                    <p>{prod.name}</p>
-                    <p>{prod.price} ГРН</p>
-                    <p>{prod.description}</p>
-                    <p>{prod.quantity} </p>
+                    <p># {prod.id}</p>
+                    <p>Назва : {prod.name}</p>
+                    <p>Ціна : {prod.price} ГРН</p>
+                    <p>Опис : {prod.description}</p>
+                    <p>Знижка : {prod.quantity} </p>
                 </>
             )}
         </Card>

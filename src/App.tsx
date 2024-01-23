@@ -10,6 +10,7 @@ import React from "react";
 import LeavePage from "./components/containers/leave/LeavePage.tsx";
 import ProductsListPage from "./components/containers/products/ProductsListPage.tsx";
 import ShowPage from "./components/containers/show/ShowPage.tsx";
+import ProductCreatePage from "./components/containers/products_create/ProductCreatePage.tsx";
 
 
 
@@ -27,6 +28,7 @@ const App: React.FC = () => {
                     <Route path={'leave'} element={<LeavePage/>}/>
                     <Route path={'products'} element={<ProductsListPage/>}/>
                     <Route path={'products/show/:id'} element={<ShowPage/>}/>
+                    <Route path={'product/create'} element={<ProductCreatePage/>}/>
 
 
                     <Route path="*" element={<NoMatch/>}/>
